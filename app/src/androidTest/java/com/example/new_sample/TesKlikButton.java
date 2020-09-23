@@ -43,14 +43,31 @@ public class TesKlikButton {
         onView(withId(R.id.button_multi)).perform(click());
         onView(withId(R.id.button3)).perform(click());
         onView(withId(R.id.button_equal)).perform(click());
-        onView(withId(R.id.input)).check(matches(withText("3")));
+        onView(withId(R.id.output)).check(matches(withText("3")));
     }
+
     @Test
     public void tesJumlah(){
         onView(withId(R.id.button1)).perform(click());
         onView(withId(R.id.button_add)).perform(click());
         onView(withId(R.id.button3)).perform(click());
         onView(withId(R.id.button_equal)).perform(click());
-        onView(withId(R.id.input)).check(matches(withText("4")));
+        onView(withId(R.id.output)).check(matches(withText("4")));
+    }
+    @Test
+    public void tesPengurangan(){
+        onView(withId(R.id.button1)).perform(click());
+        onView(withId(R.id.button_sub)).perform(click());
+        onView(withId(R.id.button3)).perform(click());
+        onView(withId(R.id.button_equal)).perform(click());
+        onView(withId(R.id.output)).check(matches(withText("-2")));
+    }
+    @Test
+    public void tesPembagian(){
+        onView(withId(R.id.button1)).perform(click());
+        onView(withId(R.id.button_divide)).perform(click());
+        onView(withId(R.id.button3)).perform(click());
+        onView(withId(R.id.button_equal)).perform(click());
+        onView(withId(R.id.output)).check(matches(withText("0,3333333333333")));
     }
 }
