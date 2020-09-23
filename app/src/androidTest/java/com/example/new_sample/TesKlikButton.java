@@ -43,8 +43,9 @@ public class TesKlikButton {
         onView(withId(R.id.button_multi)).perform(click());
         onView(withId(R.id.button3)).perform(click());
         onView(withId(R.id.button_equal)).perform(click());
-        onView(withId(R.id.input)).check(matches(withText("3")));
+        onView(withId(R.id.output)).check(matches(withText("3")));
     }
+
     @Test
     public void tesJumlah(){
         onView(withId(R.id.button1)).perform(click());
