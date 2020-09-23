@@ -53,6 +53,7 @@ public class TesKlikButton {
         onView(withId(R.id.button3)).perform(click());
         onView(withId(R.id.button_equal)).perform(click());
         onView(withId(R.id.output)).check(matches(withText("4")));
+<<<<<<< HEAD
     }
     @Test
     public void tesPengurangan(){
@@ -69,5 +70,7 @@ public class TesKlikButton {
         onView(withId(R.id.button3)).perform(click());
         onView(withId(R.id.button_equal)).perform(click());
         onView(withId(R.id.output)).check(matches(withText("0,3333333333333")));
+=======
+>>>>>>> 6c6961593b1fdffdbaccb178f92441ffdf6f4652
     }
 }
